@@ -1,0 +1,326 @@
+.fade-out {
+    opacity: 1;
+    transition: opacity 10s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+.post-title {
+    font-size: 20px;
+    color: darkblue;
+    text-transform: uppercase;
+    margin-left: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+  .post-body {
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+#popup-button {
+    background-color: #008CBA;
+    border-radius: 8px;
+    margin-left: 50px;
+    box-shadow: 0px 1px 3px; /* Тень */
+}
+#popup-button:hover { /* Преображение при наведении */
+background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8,#777); /* Радиальный градиент, переход цвета от центра к краям */
+  }
+#city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+  }
+#submits {
+    background-color: #008CBA;
+    border-radius: 8px;
+    margin-left: 20px;
+    box-shadow: 0px 1px 3px; /* Тень */
+}
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    font-family: 'Times New Roman', Times, serif;   
+}
+#pogoda {
+    margin-top: 30px;
+    background-color: aqua;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+    align-items: center;
+    display: block;
+
+}
+#cytaty {
+    font-family: 'Times New Roman', Times, serif;
+}
+div:has(> blockquote) {
+    background-color: #ededed;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  blockquote p::before {
+    content: '\201C';
+  }
+  
+  blockquote p::after {
+    content: '\201D';
+  }
+  
+  blockquote + p {
+    text-align: right;
+  }
+  img d-block w-100 {
+    width: 100%;
+    position: relative;
+
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+   p {
+    
+    text-align: justify;
+    padding: 0 20px 0 20px; 
+    font-family: 'Times New Roman', Times, serif;   
+  }
+  .card-body {
+    padding: 0;
+  }
+  h6 {
+    padding: 0 20px 0 20px;
+  }
+  .btn-primary {
+    margin: 5px 0 20px 20px;
+    background-image: linear-gradient(to bottom, #cfd4dc, #a9b3b8, #879392, #6b736e, #52544d);
+    
+  }
+  .posts-submit, .comments-submit, .users-submit {
+    margin: 0px 20px 0 0;
+  }
+  .row {
+    margin: 20px;
+  }
+  .soundbar {
+    float: left;
+    border-radius: 5px;
+
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+/* Окрашивание кнопки при наведении hover */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Стиль панели  */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+} 
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 8px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  margin-top: 3%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.imageTrees{
+  position: static;
+  display: block;
+}
+.img-fluidTrees{
+  height: 200px;
+  width: 100%;
+}
+h1.center-both {
+  position: absolute;
+  top: 18%;
+  padding-left: 45%;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);  
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+}
+@media screen and (max-device-width: 991px) {
+  h1.center-both {
+    display: none;
+  }
+}
+
+@media screen and (max-device-width: 1258px) {
+  ul.navbar-nav li {
+    padding-left: 0%;
+  }
+  a.nav-link {
+    font-size: 12px;
+  }
+}
+
+ul.navbar-nav {
+  
+  padding-left: 1%;
+}
+ul.navbar-nav li {
+  padding-left: 8%;
+  white-space: nowrap;
+  
+}
+form.d-flex {
+  padding: 10px 0 10px 20px;
+}
+input.form-control-posts, input.form-control-comments, input.form-control-users {
+  width: 60%;
+  border-radius: 5px;
+  height: 40px;
+}
+button.posts-submit {
+  margin-left: 0;
+}
+h5.title-modal {
+  text-align: center;
+  padding-bottom: 4%;
+}
+legend {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 20px;
+  font-size: 1.20rem;
+  margin-bottom: 0;
+  
+}
+
+#sort-asc-posts, #sort-asc-comments, #sort-asc-users,
+#sort-desc-posts, #sort-desc-comments, #sort-desc-users {
+  margin: 10px 10px 10px 20px;
+  cursor: pointer;
+}
+
+.labelPosts, .labelComments, .labelUsers {
+
+  cursor: pointer;
+} 
+
+fieldset {
+  border: 1px solid #a3a1a1;
+  margin-top: 10px;
+}
+#footer-fixed {
+  background-color: rgba(33, 37, 41);
+  height: 5px;
+  color: #fff;
+  position: relative;
+  margin-top: 20px;
+}
+.containerFooter {
+  padding-top: 0;
+  display: block;
+  white-space: nowrap;
+  
+}
+        
+.text-dark {
+
+margin-top: 95px;
+}
+/* News*/
+
+ol.breadcrumb {
+width: 100%;
+background: #ccc;
+font-family: 'Times New Roman', Times, serif;
+}
+li.breadcrumb-item {
+  padding: 10px 0 10px 40px;
+}
+#textNews1, #textNews2, #textNews3{
+  font-family: 'Times New Roman', Times, serif;
+  
+
+  /* Обрезка текста */
+  line-height: 1.5rem;
+  max-height: 21rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden!important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 14;
+  margin: 0; /* Убираем внешний отступ */
+}
+.btn-secondary {
+  margin: 5px 0 20px 20px;
+  background-image: linear-gradient(to bottom, #cfd4dc, #a9b3b8, #879392, #6b736e, #52544d);
+  border: linear-gradient(to bottom, #cfd4dc, #a9b3b8, #879392, #6b736e, #52544d);;
+}
+
+.sortable-ghost {
+  opacity: 0.5;
+  background-color: #ea0b30;
+}
+#colums{
+  position: relative;
+  margin: 0;
+  display: flex;
+ 
+}
+
+
+/* Регистрация / авторизация */
+
+.centerregistredForm {
+  text-align: center;
+}
+.modal-body.registration {
+ padding-bottom: 0;
+}
+.btn.btn-primary.registred {
+  padding-right: 30px;
+  padding-left: 30px;
+  background-image: linear-gradient(to bottom, #cfd4dc, #a9b3b8, #879392, #6b736e, #52544d);
+  
+}
+.btn.btn-primary.registred.active {
+	background-image: linear-gradient(to bottom, #cfd4dc, #a9b3b8, #879392, #6b736e, #52544d);
+  
+}
+
+
+.btn.btn-primary.registred:hover {
+box-shadow:       inset 0 4px 5px;
+}
+/*.btn.btn-secondary.send:hover {
+  box-shadow:       inset 0 4px 5px;
+}
+.btn.btn-secondary.close:hover {
+  box-shadow:       inset 0 4px 5px;
+  padding: auto;
+}*/
