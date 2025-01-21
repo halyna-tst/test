@@ -16,4 +16,4 @@
 ## Как запустить
 1. Клонировать репозиторий:
    ```bash
-   git clone https://github.com/halyna-tst/test/new/master.git
+   git clone https://github.com/halyna-tst/test/tree/master
